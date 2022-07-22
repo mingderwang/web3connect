@@ -16,8 +16,8 @@
     "dev": "microbundle watch",
     "build": "microbundle",
     "test": "ava",
-    "lint": "xo src",
-    "format": "xo src --fix",
+    "lint": "xo src tests",
+    "format": "xo src tests --fix",
     "prepack": "rm -rf dist && yarn build",
     "release": "yarn prepack && source .env && np",
     "pub": "yarn publish --access public",
@@ -47,5 +47,11 @@
   "files": [
     "dist/**.js*",
     "dist/**/*.ts"
-  ]
+  ],
+  "xo": {
+    "prettier": true,
+    "space": true,
+    "globals": [],
+    "rules": {}
+  }
 }
