@@ -1,6 +1,6 @@
 {
   "name": "@muzamint/web3connect",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "source": "src/main.ts",
   "main": "dist/main.umd.js",
   "module": "dist/main.modern.module.js",
@@ -19,7 +19,9 @@
     "lint": "xo src",
     "format": "xo src --fix",
     "prepack": "rm -rf dist && yarn build",
-    "release": "yarn prepack && source .env && np"
+    "release": "yarn prepack && source .env && np",
+    "pub": "yarn publish --access public",
+    "log-in": "npm login --scope=@muzamint"
   },
   "devDependencies": {
     "@ava/typescript": "^2.0.0",
