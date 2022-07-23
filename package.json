@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "microbundle watch",
     "build": "microbundle",
-    "test": "ava",
+    "test": "ava --verbose",
     "lint": "xo src tests",
     "format": "xo src tests --fix",
     "prepack": "rm -rf dist && yarn build",
